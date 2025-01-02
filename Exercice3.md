@@ -19,13 +19,7 @@
 ***git merge test_valide***
 
 ## 5.- _Donne la(les) ligne(s) de commande(s) bash pour afficher le texte suivant_
-
-***la commande echo permet d'afficher cela***
-Malgré le prix élevé de 100$, il a dit "Bonjour !" au vendeur :
-- "Bonjour est-ce que ce clavier fonctionne bien ?"
-- "Evidemment ! On peut tout écrire avec, que ce soit des pipe | ou bien des backslash \\ !"
-- "Même des tildes ~ ?"
-- "Evidemment !"
+echo -e "Malgré le prix élevé de 100\$, il a dit \"Bonjour !\" au vendeur :\n- \"Bonjour est-ce que ce clavier fonctionne bien ?\"\n- \"Evidemment ! On peut tout écrire avec, que ce soit des pipe | ou bien des backslash \\\\ !\"\n- \"Même des tildes ~ ?\"\n- \"Evidemment !\""
 
 ## 6.- _La commande jobs -l donne le résultat ci-dessous :_
 wilder@Ubuntu:~$ jobs -l
@@ -35,19 +29,19 @@ wilder@Ubuntu:~$ jobs -l
 
 Quelle commande te permet de mettre en avant le processus gedit ?
 
-***cette commande permet de mettre en avant le processus gedit: wmctrl -ia 0x04c00003***
+***cette commande permet de mettre en avant le processus gedit: gedit***
 
 ## 7.- Quels matériels réseaux sont sur la couche 2 et la couche 3 du modèle OSI ? Donne leurs spécificités.
 
-- ***la couche 2 permet la communication entre réseaux différent, tout en faisant en sorte que le transport des donnés soit une réussite, et qu'il n'y est aucune perte (cheksum)***
-- ***la couche 3 permet la décomposition chez la machine de l'expéditeur et le réassemblage chez la machine destinataire, l'envoie se fait par petit paquet, jusqu'a tout recevoir.*** 
+- ***la couche 2: liaison de données (switch et carte réseau)***
+- ***la couche 3: réseau (routeur).*** 
 
 ## 8.- Quels sont les équivalent PowerShell des commandes bash cd, cp, mkdir, ls.
 
   -***cd => set-location***
   -***cp => copy-item***
-  -***mkdir => new-item***
-  -***ls => get-content***
+  -***mkdir => new-item directory***
+  -***ls => get-ChildItem***
 
 ## 9.- Dans la trame ethernet, qu'est-ce que le payload ?
 
@@ -55,4 +49,4 @@ Quelle commande te permet de mettre en avant le processus gedit ?
 
 ## 10.- Pourquoi les classes IP sont remplacées par le CIDR ?
 
-***pour une meilleur qualité d'adressage, et pouvoir s'y retrouver parmis toute les adresses créer.***
+***Elles ont été remplacées par le CIDR afin de limiter les classes IP traditionnelles et améliorer l'efficacité de l'utilisation des adresses IP.***
